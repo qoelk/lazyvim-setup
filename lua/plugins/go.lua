@@ -50,11 +50,12 @@ return {
       dap.configurations.go = {
         {
           type = "go",
-          name = "Debug application-communication",
+          ft = { "go" },
+          name = "Debug service in place",
           request = "launch",
           mode = "debug",
           program = "${file}",
-          port = 2345,
+          args = { "--local-config-enabled", "--bind-localhost" },
         },
         {
           type = "go",
