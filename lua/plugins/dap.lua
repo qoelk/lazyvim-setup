@@ -11,7 +11,9 @@ return {
     "igorlfs/nvim-dap-view",
     event = "VeryLazy",
     opts = {
-      inline = false,
+      virtual_text = {
+        enabled = false,
+      },
     },
     keys = {
       {
