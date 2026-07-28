@@ -4,6 +4,8 @@
 
 vim.g.snacks_animate = false
 
+vim.opt.shortmess:remove("I")
+
 vim.opt.wrap = true
 vim.opt.autoread = true
 vim.opt.swapfile = false
